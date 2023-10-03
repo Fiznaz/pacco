@@ -12,7 +12,7 @@ import { createUser } from "../database"
 const AppIcon = () => (
   <Image
     source={require("../assets/Pacco_Main.png")}
-    style={{ width: 10, height: 10, right: 50, top: -5 }}
+    style={{ width: 90, height: 90, right: 150, top: -120 }}
     resizeMode='contain'
   />
 )
@@ -52,6 +52,9 @@ const Signup = ({ route, navigation }) => {
 
   return (
     <View style={styles.container}>
+      <View style={styles.centeredContent}>
+        <AppIcon style={styles.image}/>
+      </View>
       <Text style={styles.userTypeText}>Sign up as {userType}</Text>
       <Text style={styles.questionText}>What's your name?</Text>
 

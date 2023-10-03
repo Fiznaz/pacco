@@ -44,13 +44,16 @@ const Login = ({ navigation }) => {
   const AppIcon = () => (
     <Image
       source={require("../assets/Pacco_Main.png")}
-      style={{ width: 100, height: 100, right: 150, top: -20 }}
+      style={{ width: 100, height: 100, right: 150, top: -280 }}
       resizeMode='contain'
     />
   )
 
   return (
     <View style={styles.container}>
+      <View style={styles.centeredContent}>
+        <AppIcon style={styles.image}/>
+      </View>
       <Text style={styles.userTypeText}>Login as {userType}</Text>
 
       <TextInput
@@ -84,11 +87,13 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#000",
+
   },
   userTypeText: {
     color: "#fff",
     fontSize: 24,
     marginBottom: 10,
+    bottom: 90,
   },
   input: {
     width: "80%",
@@ -97,6 +102,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#00CCCC",
     color: "#fff",
+    bottom: 70,
   },
   nextButton: {
     backgroundColor: "#00CCCC",
@@ -105,10 +111,12 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     alignItems: "center",
+    bottom: 40,
   },
   buttonText: {
     color: "#fff",
     fontWeight: "bold",
+    fontSize: 18,
   },
 })
 
